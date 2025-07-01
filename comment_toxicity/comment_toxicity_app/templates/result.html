@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Toxicity</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <div id="output_div">
+        <center>
+            <!--
+            <h1>RISK : {% if result.risk_score == 2 %}
+                High2
+                {% elif result.risk_score == 0 %}
+                Low0
+                {% else %}
+                Medium1
+                {% endif %}</h1> -->
+
+            <h3>count: {{result.count}}</h3>
+            <h3>hate_speech_count: {{result.hate_speech_count}}</h3>
+            <h3>offensive_language_count: {{result.offensive_language_count}}</h3>
+            <h3>neither_count: {{result.neither_count}}</h3>
+            <h3>class: {{result.class}}</h3>
+            <br><br><br>
+
+
+        </center>
+    </div>
+    <hr>
+    <footer>
+        <center>
+            <a href="/">Back</a>
+        </center>
+    </footer>
+</body>
+
+</html>

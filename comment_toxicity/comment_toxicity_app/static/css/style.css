@@ -1,0 +1,51 @@
+head
+{
+    /* color: lemonchiffon; */
+    /* background: linear-gradient(pink, cyan); */
+}
+
+body
+{
+    color: coral;
+    background: linear-gradient(lemonchiffon, lightcoral);
+    /* background-color: pink; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+/* .container
+{
+
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+} */
+
+button
+{
+    /* font-family: 'Consolas', Courier, monospace; */
+    color: tomato;
+}
+
+input
+{
+
+    color: black;
+    /* background-color: grey; */
+}
+
+/* #input_div, */
+#output_div
+{
+    /* border-style: inset;
+    border-color: cyan; */
+    color: black;
+    background: linear-gradient(pink, cyan);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

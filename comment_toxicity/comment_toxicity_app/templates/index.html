@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Toxicity Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <center>
+        <h1>Comment Toxicity Classifier</h1>
+        <div id="input_div" class="container">
+            <center>
+                <form method="POST" action="{% url 'predictor' %}">
+                    {% csrf_token %}
+                    <input type="text" id="com_text" name="com_text" size="10" placeholder="Enter Comment Text:"
+                        required /> <br>
+
+                    <button type="submit">Predict toxicity levels</button>
+                </form>
+
+
+
+                <!--  gr
+                <form method="POST" action="{% url 'predictor' %}">
+                    {% csrf_token %}
+                    <label for="com_text">Enter Comment:</label><br>
+                    <textarea name="com_text" id="com_text" rows="4" cols="50" required></textarea><br>
+                    <input type="text" id="com_txt" name="com_text" size="10" placeholder="Enter Comment Text:"
+                        required /> <br>
+                    <input type="submit" value="Predict">
+                </form> -->
+
+
+
+
+
+                <!-- <form method="POST" action="{% url 'predictor' %}">
+                    {% csrf_token %}
+                    <label for="com_text">Enter Comment:</label><br>
+                    <textarea name="com_text" id="com_text" rows="4" cols="50" required></textarea><br>
+                    <input type="submit" value="Predict">
+                </form> -->
+            </center>
+        </div>
+    </center>
+</body>
+
+</html>
